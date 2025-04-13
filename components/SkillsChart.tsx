@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useRef } from 'react';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, TooltipItem } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -80,7 +80,7 @@ const SkillsChart: React.FC<SkillsChartProps> = ({ className = '' }) => {
       },
       tooltip: {
         callbacks: {
-          label: function(context: any) {
+          label: function(context: TooltipItem<'pie'>) {
             const label = context.label || '';
             const value = context.formattedValue || '';
             const category = skillCategories.find(cat => cat.name === label);

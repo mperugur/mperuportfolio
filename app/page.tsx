@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import PipelineFlow from "../components/PipelineFlow";
 import SkillsChart from "../components/SkillsChart";
 import ProjectCard from "../components/ProjectCard";
@@ -53,7 +53,6 @@ export default function Home() {
       image: "project-crm.jpg"
     }
   ];
-
   return (
     <main className="py-8 px-4 md:px-8">
       {/* Hero Section */}
@@ -85,7 +84,7 @@ export default function Home() {
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2"></div>
                 <div>
-                  <p className="font-semibold">Master's in Information Technology</p>
+                  <p className="font-semibold">Masters in Information Technology</p>
                   <p className="text-sm text-gray-300">Towson University</p>
                 </div>
               </li>
@@ -99,8 +98,8 @@ export default function Home() {
               <li className="flex items-start gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2"></div>
                 <div>
-                  <p className="font-semibold">Bachelor's in Accounting</p>
-                  <p className="text-sm text-gray-300">University</p>
+                  <p className="font-semibold">Bachelors in Accounting</p>
+                  <p className="text-sm text-gray-300">OSmania University</p>
                 </div>
               </li>
             </ul>
@@ -145,7 +144,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-2">Projects</h2>
           <div className="w-24 h-1 bg-indigo-500 mx-auto"></div>
           <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
-            Data pipeline jobs I've designed and implemented
+            Data pipeline jobs I have designed and implemented
           </p>
         </div>
 
